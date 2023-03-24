@@ -94,7 +94,7 @@ Select calculator operation:"""
             
             
             starttime = timeit.default_timer()
-            # print("The start time for match case :",starttime)
+            print("The start time for match case :",starttime)
             match choice:
                 case 1:
                     print("Addition processing for number " + str(first_num) + " and " + str(second_num))
@@ -118,24 +118,24 @@ Select calculator operation:"""
                     print(f"\nDivision: {divided_num}\n\n")
                 case _:
                     print("Invalid choice")           
-            # print("The time difference for match case is :", timeit.default_timer() - starttime)
+            print("The time difference for match case is :", timeit.default_timer() - starttime)
 
             if test:
                 break
 
-            # starttime = timeit.default_timer()
-            # print("The start time for if else :",starttime)
-            # if choice == 1:
-            #     print("Addition processing for number " + str(first_num) + " and " + str(second_num))                
-            # elif choice == 2:
-            #     print(f"Substraction processing for number {first_num} and {second_num}")
-            # elif choice == 3:
-            #     print("Multiplication processing for number {} and {}".format(first_num, second_num))          
-            # elif choice == 4:
-            #     print("Division processing for number {} and {}".format(first_num, second_num))               
-            # else:
-            #     print("Invalid choice")      
-            # print("The time difference for if else is :", timeit.default_timer() - starttime)
+            starttime = timeit.default_timer()
+            print("The start time for if else :",starttime)
+            if choice == 1:
+                print("Addition processing for number " + str(first_num) + " and " + str(second_num))                
+            elif choice == 2:
+                print(f"Substraction processing for number {first_num} and {second_num}")
+            elif choice == 3:
+                print("Multiplication processing for number {} and {}".format(first_num, second_num))          
+            elif choice == 4:
+                print("Division processing for number {} and {}".format(first_num, second_num))               
+            else:
+                print("Invalid choice")      
+            print("The time difference for if else is :", timeit.default_timer() - starttime)
     
     def test_run(self) -> None:
         choice = random.choice([1, 2, 3, 4])
@@ -156,3 +156,4 @@ calculator = Calculator()
 calculator.test_run()
 calculator.run()
 # Can make it more user friendly using tkinter or kivy library to create GUI
+# Web library - flask, django
